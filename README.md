@@ -15,11 +15,13 @@
 Token.generateDefault(4)
 ```
 *`Output: xR7S`*
+
 ###### Token.generateNumbers(n);
 ```js
 Token.generateNumbers(4)
 ```
- *`Output: 4561`*
+*`Output: 4561`*
+
 ###### Token.generateLetters(n);
 ```js
 Token.generateLetters(4); 
@@ -30,13 +32,13 @@ Token.generateLetters(4);
 ```js
 Token.generateID('btn-');
 ```
- *`Result: Your DOM id => btn-0`*
+*`Result: Your DOM id => btn-0`*
 
 ###### Token.compare(newToken, items);
 ```js
 Token.compare(Token.generateDefault(4), array)
 ```
- *`Result: Compare all tokenID in a array and generating new tokenID if current token are identical.`*
+*`Result: Compare all tokenID in a array and generating new tokenID if current token are identical.`*
 
 ###### Token.injected(items); 
 ```js
