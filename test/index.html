@@ -15,9 +15,9 @@
 
     <script src="../browser-token.js"></script>
     <script>
-        console.log('Default Tokenization:' + Token.generateDefault(4))
-        console.log('Numbers Tokenization:' + Token.generateNumbers(4))
-        console.log('Letters Tokenization:' + Token.generateLetters(4))
+        console.log('Default Tokenization: ' + Token.generateDefault(4))
+        console.log('Numbers Tokenization: ' + Token.generateNumbers(4))
+        console.log('Letters Tokenization: ' + Token.generateLetters(4))
 
         // Test compare tokenID 
         const gen = Token.generateDefault(4);
@@ -41,14 +41,14 @@
 
         data.identity[0]['tokenID'] = gen;
         data.identity[1]['tokenID'] = gen;
-        console.log(Token.compareToken(gen, data.identity))
+        console.log(Token.compare(gen, data.identity))
             // Test generate unique id. 
         let elementCreate = document.getElementById('test-token');
         let htmlElement = ''
         let max_element = 5;
         for (let i = 0; i < max_element; i++) {
             let button = document.createElement('button')
-            button.setAttribute('id', Token.generateID('test-'))
+            button.setAttribute('id', Token.generateID('btn-'))
             button.innerHTML = 'Valide'
             elementCreate.appendChild(button);
         }
