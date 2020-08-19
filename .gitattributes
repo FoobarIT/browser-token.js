@@ -1,5 +1,2 @@
 # Auto detect text files and perform LF normalization
-* text=auto
-$ github-linguist
-
-100.00%  JavaScript
+* linguist-language=JavaScript
