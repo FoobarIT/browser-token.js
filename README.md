@@ -46,7 +46,7 @@ Token.injected(array);
 ```
 *`Result: Inject an property named (tokenID) in your Object.`*
 
-##### Token.uuid(); 
+###### Token.uuid(); 
 ```js
 Token.uuid(); 
 ```
