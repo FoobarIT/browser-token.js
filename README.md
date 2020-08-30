@@ -46,6 +46,12 @@ Token.injected(array);
 ```
 *`Result: Inject an property named (tokenID) in your Object.`*
 
+##### Token.uuid(); 
+```js
+Token.uuid(); 
+```
+*`Result: Random UUID conform to RFC4122`*
+
 ##### Parameters
 |   Name |  Desc  |
 | ------------ | ------------ |

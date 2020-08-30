@@ -101,7 +101,7 @@
         /**
          * Reset index_id 
          */
-        Token.resetTokentID = function() {
+        Token.resetTokenID = function() {
             range.index_id = -1
         },
         /**
@@ -118,7 +118,16 @@
                 }
             })
         }
-
+        /*
+        * Generate UUID conform to RFC4122
+        */
+        Token.uuid = function() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                const r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+                return v.toString(16);
+            });
+           
+        }
     /**
      * @param {string} newToken
      * @param {array} items

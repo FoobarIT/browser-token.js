@@ -15,6 +15,8 @@
 
     <script src="../browser-token.js"></script>
     <script>
+
+        // Test Base function
         console.log('Default Tokenization: ' + Token.generateDefault(4))
         console.log('Numbers Tokenization: ' + Token.generateNumbers(4))
         console.log('Letters Tokenization: ' + Token.generateLetters(4))
@@ -42,7 +44,7 @@
         data.identity[0]['tokenID'] = gen;
         data.identity[1]['tokenID'] = gen;
         console.log(Token.compare(gen, data.identity))
-            // Test generate unique id. 
+        // Test generate unique id. 
         let elementCreate = document.getElementById('test-token');
         let htmlElement = ''
         let max_element = 5;
@@ -61,8 +63,12 @@
 
         // Test generateID Token 
         // Verify if the id Token aleary exist in the DOM
-        Token.resetTokentID()
+
         Token.generateID('btn-')
+
+        // Get uuid conform to RFC4122
+        let uuid = Token.uuid()
+        console.log('%c'+uuid,'background: #222; color: #bada55')
     </script>
 </body>
 
