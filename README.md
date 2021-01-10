@@ -14,19 +14,19 @@
 ```js
 Token.generateDefault(4)
 ```
-*`Output: xR7S`*
+*`Random Output: xR7S`*
 
 ###### Token.generateNumbers(n);
 ```js
 Token.generateNumbers(4)
 ```
-*`Output: 4561`*
+*`Random Output: 4561`*
 
 ###### Token.generateLetters(n);
 ```js
 Token.generateLetters(4); 
 ```
-*`Output: fdsz`*
+*`Random Output: fdsz`*
 
 ###### Token.generateID(id_name);
 ```js
@@ -57,6 +57,6 @@ Token.uuid();
 | ------------ | ------------ |
 | n | *Number*  |
 | id_name| *String*  |
-| items | * Object[]*|
+| items | *Object[]*|
 |newToken|*function(): string*|
 
